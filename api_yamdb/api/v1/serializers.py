@@ -48,7 +48,7 @@ class RegisterDataSerializer(serializers.ModelSerializer):
         if not user.exists() and email.exists():
             raise ValidationError('Недопустимый Email')
         if user.exists() and user.get().email != data.get('email'):
-            raise ValidationError('Недопустимый Email')
+            raise ValidationError('Недопустимый Email.')
         return data
 
 
