@@ -32,7 +32,7 @@ class RegisterDataSerializer(serializers.ModelSerializer):
     def validate(self, data):
         if data['username'].lower() == 'me':
             raise ValidationError(
-                {'Имя пользователя не может быть <me>'})
+                {'Имя пользователя не может быть <me>.'})
         if re.search(
             r'^[a-zA-Z][a-zA-Z0-9-_\.]{1,20}$', data['username']
         ) is None:
