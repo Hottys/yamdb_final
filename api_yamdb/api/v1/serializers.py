@@ -30,7 +30,7 @@ class RegisterDataSerializer(serializers.ModelSerializer):
         model = User
 
     def validate(self, data):
-        if data['username'].lower() == 'me':
+        if data['username'].lower() == 'me.':
             raise ValidationError(
                 {'Имя пользователя не может быть <me>'})
         if re.search(
