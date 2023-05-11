@@ -1,6 +1,6 @@
 # yamdb_final. CI/CD.
 
-https://github.com/Hottys/yamdb_final/actions/workflows/yamdb_workflow.yml/badge.svg
+![example workflow](https://github.com/Hottys/yamdb_final/actions/workflows/yamdb_workflow.yml/badge.svg)
 
 ## Описание проекта api_yamdb:
 
